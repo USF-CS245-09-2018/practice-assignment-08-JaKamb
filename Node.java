@@ -6,7 +6,10 @@ public class Node{
 		this(null, null);
 	}
 	public Node(Node next){
-		this(next, null);
+		this(null, next);
+	}
+	public Node(Object obj){
+		this(obj, null);
 	}
 	public Node(Object data, Node next){
 		this.next = next;
@@ -19,9 +22,9 @@ public class Node{
 		this.next = next;
 	}
 	public Object data(){
-		return data;
+		return this.data;
 	}
 	public Node next(){
-		return next;
+		return this.next;
 	}	
 }
